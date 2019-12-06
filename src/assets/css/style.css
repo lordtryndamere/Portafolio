@@ -67,15 +67,89 @@ header a {
 }
 
 
-header a:hover{
+header a:hover,
+.actived{
 background: rgba(0,0,0,0.8);
 }
 
 #LOGO{
     font-family: "finger" ;
-    font-size: 30px;
+    font-size: 26px;
+}
+
+#LOGO a{
+    transition: color 500ms, transform 500ms;   
 }
 
 #LOGO a:hover{
     background: transparent;
+    color: black;
+    transform:scale(1.40,1.40) ;
+}
+
+/*Contenedor Principal*/
+#content{
+    height: 43vw;
+    width: 75%;
+    border-left: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7;
+    margin: 0px auto;
+    box-shadow: 0px 0px 40px black;
+    background: rgba(255,255,255,0.7);
+    padding-top: 120px;
+}
+
+/*PIE DE PAGINA*/
+footer{
+    width: 75%;
+    margin: 0PX auto;
+    padding-top: 25px;
+    color:rgba(0,0,0,0.5) ;
+}
+
+/*Sobre mi*/
+
+#title{
+
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+
+#title h1{
+    font-family: "finger";
+    font-size: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+
+}
+
+#title h2{
+    font-size: 25px;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+article.about{
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.about h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.about p{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: justify;
 }
